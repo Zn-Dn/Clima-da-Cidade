@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use(express.json())
 
 app.get("/", (req, res) => {
-    res.sendFile("index.html", { root: "public" });
+    res.sendFile("clima.html", { root: "public" });
 });
 
 async function buscarClima(cidade) {
