@@ -3,7 +3,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "bcrypt": "^6.0.0",
     "better-sqlite3": "^13.0.2",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
