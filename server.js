@@ -13,7 +13,9 @@ const app = express()
 app.use(cors());
 app.use(express.static("public"));
 app.use(express.json())
-
+app.get("/", (req, res) => {
+    res.send("TESTE ROTA RAIZ 999");
+});
 app.get("/", (req, res) => {
     res.sendFile("clima.html", { root: "public" });
 });
